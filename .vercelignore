@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs (except .next for Next.js apps)
+dist
+build
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+__tests__
+coverage
+
+# Environment files
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Documentation (not needed in deployment)
+*.md
+!README.md
+
+# CI/CD
+.github
+
+# Development
+.husky
+scripts
+
+# Mobile app (not for web deployment)
+apps/mobile
+
+# Contracts (not for web deployment)  
+apps/contracts
+
+# Other apps when deploying specific app
+# (Vercel will automatically exclude based on root directory selection)

@@ -71,6 +71,17 @@ pnpm dev
 
 and visit http://localhost:4783
 
+## 🚀 Deployment
+
+Ready to deploy your own instance of Tape? Check out our comprehensive [Deployment Guide](DEPLOYMENT.md) for step-by-step instructions on deploying to Vercel!
+
+**Quick Deploy to Vercel:**
+1. Fork this repository
+2. Sign up for [Vercel](https://vercel.com)
+3. Import your fork and deploy!
+
+For detailed instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ## 🤝 Contributors
 
 We love contributors! Feel free to contribute to this project but please read the [Contributing Guidelines](.github/CONTRIBUTING.md) before opening an issue or PR so you understand the branching strategy and local development environment.
