@@ -94,10 +94,20 @@ This monorepo contains multiple applications. Here's what each one does:
 | **web** | Main frontend application | ✅ Yes - Start here! |
 | **embed** | Embed Video Player | ✅ Yes |
 | **og** | Open Graph meta tags generator | ✅ Yes |
-| **api** | Backend application | ⚠️ Requires additional setup |
-| **cron** | Background cron jobs | ⚠️ Not suitable for Vercel |
+| **api** | Backend application (Hono) | ⚠️ Requires additional setup* |
+| **cron** | Background cron jobs | ⚠️ Not suitable for Vercel** |
 
 **Recommendation for beginners:** Start by deploying the **web** app first!
+
+> *The `api` app is a Hono backend that requires database setup (Prisma) and environment configuration. While Vercel supports Node.js backends, you'll need to:
+> - Set up a database (e.g., PostgreSQL on Railway, Supabase, or PlanetScale)
+> - Configure database connection strings
+> - Set up AWS credentials for S3/STS if needed
+> - This is more advanced and recommended only after deploying the frontend successfully.
+
+> **The `cron` app runs scheduled background tasks. Vercel's serverless functions have execution time limits (10s on Hobby, 60s on Pro), making them unsuitable for long-running cron jobs. Consider using:
+> - [Vercel Cron Jobs](https://vercel.com/docs/cron-jobs) for simple scheduled tasks
+> - External services like [GitHub Actions](https://docs.github.com/en/actions) or [Railway](https://railway.app/) for complex workflows
 
 ## 🔧 Environment Variables
 
